@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home page</title>
+</head>
+<body id="body">
+    
+	<script type="text/javascript">
+    //pure function with parametes
+		function counterReducer(actionType,counter){
+            if(actionType=="INC"){
+                return counter+1;
+            }
+            if(actionType=="DEC"){
+                return counter-1;
+            }
+        }
+        console.log(counterReducer("INC",10));
+        console.log(counterReducer("DEC",10));
+        //from here we are calling the function
+	</script>
+</body>
+</html>
